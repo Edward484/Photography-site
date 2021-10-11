@@ -1,0 +1,573 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    background-color: white;
+    border: 0;
+}
+
+img {
+    width: 20em;
+}
+
+body {
+    width: 100vw;
+}
+
+.title {
+    font-size: 3.4vh;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    height: 50px;
+    margin: 0;
+    color: #5390d9;
+}
+
+.art {
+    color: #6930c3;
+    font-size: 4.5vh;
+}
+
+.photgraphy {
+    color: #6930c3;
+}
+
+#logo {
+    width: 20vh;
+    margin: 0em;
+    border: 0;
+    padding: 0em;
+}
+
+.navBarList .logoPages {
+    width: 2vh;
+    background-color: white;
+    border-color: #64dfdf;
+}
+
+#insta_logo {
+    background-color: #64dfdf;
+}
+
+.navigation {
+    margin-bottom: 2rem;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0;
+}
+
+aside.navigation {
+    width: 100%;
+}
+
+.navBar {
+    background-color: #64dfdf;
+    height: 8vh;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+ul.navBarList {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navBar li a {
+    color: black;
+    text-decoration: none;
+}
+
+.navBar li {
+    font-size: 1.2em;
+}
+
+button.buttonHome {
+    border: 0;
+    padding: 0;
+    border: 0;
+}
+
+button.buttonHome:hover,
+button.buttonHome:focus {
+    cursor: pointer;
+}
+
+
+/* DROPDOWN */
+
+.all_dropdown {
+    background-color: #64dfdf;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.all_dropdown li {
+    background-color: #64dfdf;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    transition-duration: 1s;
+    text-decoration: none;
+}
+
+.all_dropdown li a {
+    color: black;
+    position: static;
+}
+
+.all_dropdown li:focus-within a {
+    outline: none;
+}
+
+.all_dropdown button {
+    background-color: #64dfdf;
+    width: 150px;
+    padding: 20px;
+    transition: all 0.5s ease-in;
+}
+
+.all_dropdown li ul {
+    /* visibility: hidden; */
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease-in;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+.all_dropdown li:hover>ul,
+.all_dropdown li:focus-within>ul,
+.all_dropdown li ul:hover,
+.all_dropdown li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.all_dropdown li:hover,
+.all_dropdown li:focus-within,
+.all_dropdown button:hover,
+.all_dropdown button:focus {
+    cursor: pointer;
+    background-color: #5390d9;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+.all_dropdown li ul li {
+    /* border: 1px solid  black; */
+    padding: 0px;
+    border: 0;
+}
+
+.navBarList a {
+    font-size: 1.7rem;
+}
+
+
+/* DROPDOWN */
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio2 {
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width: 1480px) {
+    .portfolio1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 768px) {
+    .portfolio2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* LIGHBOX */
+
+section .lightbox {
+    margin-bottom: 2rem;
+}
+
+a.lightbox img {
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
+    margin: 94px 20px 20px 20px;
+}
+
+
+/* Stilizeaza backgound-ul lightbox-ului, o ascunde si adauga tranzitia */
+
+.lightbox-target {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    left: 0;
+    background: rgb(63 92 109 / 70%);
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    overflow: hidden;
+}
+
+
+/* Stilizeaza lighbocul, o centreaza , adauga tranzitia si o face responsive */
+
+.lightbox-target img {
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 0%;
+    max-width: 0%;
+    border: 3px solid white;
+    box-shadow: 0px 0px 8px rgba(55, 54, 107, 0.3);
+    box-sizing: border-box;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+a.lightbox-close {
+    display: block;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: fixed;
+    top: -80px;
+    right: 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+
+/* stilizeaza X ul pt a inchide lightboxul */
+
+a.lightbox-close:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top: 10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* stilizeaza X ul pt a inchide lightboxul */
+
+a.lightbox-close:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top: 10px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+/* :target leaga animatia de poza */
+
+.lightbox-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+}
+
+.lightbox-target:target img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+    top: 0px;
+}
+
+.navBarList li:hover,
+.navBarList li:focus {
+    cursor: pointer;
+    background-color: #5390d9;
+    transition: all 0.5s ease-in;
+}
+
+
+/* LIGHTBOX */
+
+@media (max-width: 768px) {
+    #lista {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navBar {
+        height: auto;
+    }
+    .presentation {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+        align-items: flex-start;
+        width: auto;
+    }
+    .title {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+    .all_dropdown li {
+        padding: 0;
+    }
+    .all_dropdown li ul {
+        position: relative;
+    }
+    .all_dropdown li:hover>ul,
+    .all_dropdown li:focus-within>ul,
+    .all_dropdown li ul:hover,
+    .all_dropdown li ul:focus {
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+    .dropdown_active {
+        visibility: visible!important;
+        opacity: 1!important;
+        display: block!important;
+    }
+}
+
+.portfolio {
+    border-bottom: 3px solid #6930c3;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_about_site {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 25%;
+    height: 5vw;
+    margin: 10px;
+    padding: 3px;
+    /* border: 3px solid #6930c3; */
+}
+
+body {
+    min-height: 2000px;
+}
